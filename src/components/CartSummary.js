@@ -26,10 +26,10 @@ export default function CartSummary() {
         </nav>
       </Link>
       
-      <CartModal
+      {/* <CartModal
         isModalVisible={isModalVisible}
         toggleModal={toggleModal}
-      />
+      /> */}
     </>
   );
 }

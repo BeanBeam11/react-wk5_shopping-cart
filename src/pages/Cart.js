@@ -3,8 +3,8 @@ import { Layout } from 'antd';
 import NavBar from "../components/NavBar";
 import AppHeader from "../components/Header"
 import AppFooter from "../components/Footer"
-// import ProductList from "../components/ProductList";
 import { StoreContext } from "../store"
+import CartModal from "../components/CartModal"
 
 const { Header, Content, Footer } = Layout;
 
@@ -20,7 +20,7 @@ function Cart() {
           <AppHeader title={title} /> 
         </Header>
         <Content className="layout-content">
-          
+          <CartModal />
         </Content>
         <Footer className="layout-footer">
           <AppFooter />

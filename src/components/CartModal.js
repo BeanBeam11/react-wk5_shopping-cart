@@ -34,12 +34,13 @@ export default function CartModal({ isModalVisible, toggleModal }) {
    }
 
    return (
-      <Modal
-         title="Shopping Bag"
-         visible={isModalVisible}
-         onCancel={handleCancel}
-         footer={null}
-      >
+      // <Modal
+      //    title="Shopping Bag"
+      //    visible={isModalVisible}
+      //    onCancel={handleCancel}
+      //    footer={null}
+      // >
+      <>
          {cartItems.length === 0 ? (
             <div>Cart is empty</div>
          ) : (
@@ -88,6 +89,7 @@ export default function CartModal({ isModalVisible, toggleModal }) {
             <CartIcon size={20} />
             <span style={{ marginLeft: 12 }}>Start Checkout</span>
          </Button>
-      </Modal>
+      </>
+      // </Modal>
    );
 }
