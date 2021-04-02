@@ -3,6 +3,7 @@ import { Badge } from "antd";
 import { CartIcon } from "./Icons";
 import CartModal from "./CartModal";
 import { StoreContext } from "../store"
+import { Link } from "react-router-dom";
 
 export default function CartSummary() {
 
@@ -16,12 +17,15 @@ export default function CartSummary() {
     
   return (
     <>
-      <nav onClick={toggleModal} className="header-cart-summary" >
-        <Badge count={count} size={"small"} style={{ color: 'white', backgroundColor: '#6366F2' }}>
-          <CartIcon size={32} />
-        </Badge>
-        <p className="cart-summary-text"> Shopping bag </p>
-      </nav>
+      <Link to="/cart">
+        <nav className="header-cart-summary" >
+          <Badge count={count} size={"small"} style={{ color: 'white', backgroundColor: '#6366F2' }}>
+            <CartIcon size={32} />
+          </Badge>
+          <p className="cart-summary-text"> Shopping bag </p>
+        </nav>
+      </Link>
+      
       <CartModal
         isModalVisible={isModalVisible}
         toggleModal={toggleModal}
