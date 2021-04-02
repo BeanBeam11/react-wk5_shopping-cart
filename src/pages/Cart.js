@@ -9,7 +9,7 @@ import { StoreContext } from "../store"
 const { Header, Content, Footer } = Layout;
 
 function Cart() {
-//   const { state: { page: { title, products } } } = useContext(StoreContext);
+  const { state: { page: { title, products } } } = useContext(StoreContext);
   return (
     <Layout className="container main-layout">
       <Layout className="bg-gray">
@@ -17,7 +17,7 @@ function Cart() {
       </Layout>
       <Layout className="bg-gray">
         <Header className="layout-header">
-          <AppHeader />
+          <AppHeader title={title} /> 
         </Header>
         <Content className="layout-content">
           
