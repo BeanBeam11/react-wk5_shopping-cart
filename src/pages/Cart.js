@@ -17,7 +17,7 @@ function Cart() {
       </Layout>
       <Layout className="bg-gray">
         <Header className="layout-header">
-          <AppHeader title={title} /> 
+          <AppHeader title="Shopping bag" /> 
         </Header>
         <Content className="layout-content">
           <CartModal />
